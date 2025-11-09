@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クイズ登録画面</title>
+    <link rel="stylesheet" href="./css/mondai_add.css">
+</head>
+<body>
+
+
+
+  <div class="detail">  
+    <h2 class="title">
+        クイズ登録画面
+    </h2>
+
+      <p class="category">
+        <span class="home"><a href="home.html">ホーム</a></span>
+      </p>
+  </div>
+
+
+  <div class="introduction">
+     <p>
+        クイズ登録ページです。
+        
+        <br>
+     </p>
+
+  </div>
+
+
+   <form id="quizform">
+      <!-- カテゴリー -->
+      <div class="form-group">
+        <label for="category">カテゴリー</label>
+        <select name="category" id="category" required>
+            <!-- 初期のカテゴリー項目を動的に追加 -->
+        </select>
+        <input type="text" id="newCategory" placeholder="新しいカテゴリーを追加" />
+        <button type="button" id="addCategoryButton">カテゴリーを追加</button>
+      </div>
+     
+     <!--問題文-->
+      <label for="question">問題文:</label><br>
+    <textarea id="question" name="question" rows="4" cols="50" required></textarea><br><br>
+
+    <!--選択肢-->
+    <label for="choice1">選択肢1:</label><br>
+    <input type="text" id="choice1" name="choice1" required><br><br>
+
+    <label for="choice2">選択肢2:</label><br>
+    <input type="text" id="choice2" name="choice2" required><br><br>
+
+    <label for="choice3">選択肢3:</label><br>
+    <input type="text" id="choice3" name="choice3" required><br><br>
+
+    <label for="choice4">選択肢4:</label><br>
+    <input type="text" id="choice4" name="choice4" required><br><br>
+
+    <label for="correct_answer">正解の選択肢番号:</label><br>
+    <select id="correct_answer" name="correct_answer" required>
+        <option value="1">選択肢1</option>
+        <option value="2">選択肢2</option>
+        <option value="3">選択肢3</option>
+        <option value="4">選択肢4</option>
+    </select><br><br>
+
+    <button type="button" onclick="submitQuiz()">クイズを登録</button>
+  </form>
+
+  <h3>登録されたクイズ情報:</h3>
+  <pre id="quizOutput"></pre>
+
+  <script src="./javascript/mondai_add.js"></script>
+
+    

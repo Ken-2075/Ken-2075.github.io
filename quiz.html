@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クイズ</title>
+    <link rel="stylesheet" href="./css/quiz_1.css">
+</head>
+<body>
+
+  <div class="detail">
+    <h2 class="title">
+        クイズサイト
+    </h2>
+
+    <!-- ユーザー情報セクション -->
+    <div class="username1">
+        <h1>こんにちは、<span id="username">ゲスト</span>さん！</h1>
+        <button id="logoutBtn">ログアウト</button>
+    </div>
+    <script src="./javascript/login_2.js"></script>
+
+    <!-- ナビゲーション -->
+    <p class="category">
+        <span class="home"><a href="home.html">ホーム</a></span>
+        <span class="login"><a href="login.html">ログイン</a></span>
+        <span class="contact"><a href="">お問合せ</a></span>
+    </p>
+  </div>
+  
+  <!-- クイズ問題の表示エリア -->
+  <div id="quizContainer">
+    <!-- クイズの内容がここに表示される -->
+  </div>
+
+  <!-- 終了ボタン -->
+  <div id="endQuizBtnContainer" style="display:none;">
+    <button id="endQuizBtn">クイズを終了する</button>
+  </div>
+
+  <script src="./javascript/quiz.js"></script>
+</body>
+</html>

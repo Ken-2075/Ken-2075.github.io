@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #ffffef;
+}
+
+.title{
+    color: rgb(66, 66, 66);
+    text-align: center;
+}
+
+.category{
+   text-align: right;
+   word-spacing: 22px;
+   font-weight: bold;
+   font-size: 23px;
+   
+}
+
+.category a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.category a:hover{
+   color: black;
+}
+
+.quiz a{
+    color: #e45f5f;
+    font-size: 28px;
+}
+
+.quiz a:hover{
+    color: #ac1010;
+}
+
+.introduction{
+    color: #666666;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 120px;
+}
+
+.quiz_categry{
+    color: #666666;
+    text-align: center;
+    font-size: 29px;
+    margin-top: 185px;
+}
+
+.seikai{
+     color: #ff0404;
+     margin-top: 5px;
+}
+
+.fuseikai{
+    color: #1504ff;
+    margin-top: 5px;
+}
+
+
+.mondaibun{
+    color: #666666;
+    text-align: center;
+    font-size: 29px;
+    background-color: aliceblue;
+}
+
+.sentakushi {
+    /* ラジオボタンにスタイルを適用 */
+    width: 55px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    color: #666666;
+    font-weight: bold;
+
+}
+
+.kaitou_btn{
+      text-decoration: none;
+      color: rgb(248, 253, 255);
+      background-color: #5e84ca;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 2px 16px;
+      margin-top: 5px;
+      box-shadow:4px 4px #adbbb6;
+      transition: .10s;
+}
+
+.kaitou_btn:hover{
+   box-shadow: 0 0 0 #bbadad;
+   color: #5e84ca;
+   background-color:rgb(248, 253, 255);
+}
+.result_btn{
+      text-decoration: none;
+      color: rgb(255, 248, 248);
+      background-color: #ce5f5f;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5px 18px;
+      margin-top: 10px;
+      box-shadow:4px 4px #adbbb6;
+      transition: .10s;
+}
+
+.result_btn:hover{
+   box-shadow: 0 0 0 #bbadad;
+   color: #ce5f5f;
+   background-color:rgb(255, 248, 248);
+}
+
+
+.result-container{
+    color: #424242;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.username1{
+    color: #666666;
+    text-align: left;
+    font-size: 13px;
+}
+
+#username{
+    text-decoration: none;
+    color: #215e2e;
+    font-weight: bold;
+    font-size: 28px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-shadow: 0 0 5px rgba(157, 255, 0, 0.8), 0 0 10px rgba(0, 225, 255, 0.8); 
+}
+
+#logoutBtn {
+    padding: 2px 16px; /* ボタン内の余白 */
+    background-color: #4b72ac; /* 背景色 */
+    color: rgb(222, 240, 243); /* 文字色 */
+    border: none; /* 枠線を消す */
+    border-radius: 6px; /* 角を丸くする */
+    font-size: 15px; /* フォントサイズ */
+    cursor: pointer; /* マウスカーソルをポインターにする */
+    transition: background-color 0.3s, transform 0.2s; /* ホバー時やクリック時のアニメーション */
+}
+
+#logoutBtn:hover {
+    background-color: #0056b3; /* 背景色を少し濃くする */
+    transform: scale(1.05); /* 少し大きくなる */
+}
+
+
+#score{
+  color: #666666;
+  font-weight: bold;
+  font-size: 22px;
+}
+#correctAnswers{
+color: #666666;
+  font-weight: bold;
+  font-size: 22px;
+}
+#totalQuestions{
+  color: #666666;
+  font-weight: bold;
+  font-size: 22px;
+}
+#percentage{
+  color: #666666;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.kekka{
+    color: #666666;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#resetButton{
+    text-align: center;
+    padding: 2px 16px; /* ボタン内の余白 */
+    background-color: #4b72ac; /* 背景色 */
+    color: rgb(222, 240, 243); /* 文字色 */
+    border: none; /* 枠線を消す */
+    border-radius: 6px; /* 角を丸くする */
+    font-size: 15px; /* フォントサイズ */
+    cursor: pointer; /* マウスカーソルをポインターにする */
+    transition: background-color 0.3s, transform 0.2s; /* ホバー時やクリック時のアニメーション */
+}
+
+#resetButton:hover{
+    background-color: #0056b3; /* 背景色を少し濃くする */
+    transform: scale(1.05); /* 少し大きくなる */
+}
+
+.btn{
+    text-align: center;
+}
+
+.homebtn a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 23px;
+}

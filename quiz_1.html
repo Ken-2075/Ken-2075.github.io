@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クイズ</title>
+    <link rel="stylesheet" href="./css/quiz_1.css">
+</head>
+<body>
+    <div class="detail">  
+        <h2 class="title">クイズサイト</h2>
+
+         <div class="username1">
+    <h1>こんにちは、<span id="username">ゲスト</span>さん！</h1>
+    <button id="logoutBtn">ログアウト</button>
+
+  </div>
+        <p class="category">
+            <span class="home"><a href="home.html">ホーム</a></span>
+            <span class="login"><a href="login.html">ログイン</a></span>
+            <span class="contact"><a href="">お問合せ</a></span>
+        </p>
+    </div>
+
+
+    <!-- カテゴリー選択フォーム -->
+  <form id="quizForm">
+    <div class="catechoice1">
+        <h3>カテゴリーを選択してください</h3>
+        <select name="category" id="category">
+            <!-- カテゴリは JavaScript で追加される -->
+        </select>
+        <br>
+        <button type="button" id="startQuizBtn">クイズに挑戦！</button>
+    </div>
+  </form>
+
+    <script src="./javascript/quiz_1.js"></script>
+</body>
+</html>

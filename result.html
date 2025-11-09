@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結果発表</title>
+    <link rel="stylesheet" href="./css/result.css">
+</head>
+<body>
+  <div class="detail">  
+    <h2 class="title">
+        結果発表
+    </h2>
+
+ <!-- ユーザー情報セクション -->
+    <div class="username1">
+        <h1>こんにちは、<span id="username">ゲスト</span>さん！</h1>
+        <button id="logoutBtn">ログアウト</button>
+    </div>
+    <script src="./javascript/login_2.js"></script>
+
+
+      <p class="category">
+        <span class="home"><a href="home.html">ホーム</a></span>
+        <span class="login"><a href="login.html">ログイン</a></span>
+        <span class="contact"><a href="">お問合せ</a></span>
+      </p>
+  </div>
+    
+  <div class="introduction">
+     <p>
+        あなたの挑戦の結果をお知らせします！
+     </p>
+ </div>
+
+
+<div class="result-container">
+   <div id="quizResult">
+        <h1 class="kekka">クイズ結果</h1>
+        <p>スコア: <span id="score">0</span></p>
+        <p>正解数: <span id="correctAnswers">0</span></p>
+        <p>総問題数: <span id="totalQuestions">0</span></p>
+        <p>正解率: <span id="percentage">0%</span></p>
+        
+    
+    </div>
+
+    
+</div>
+<div class="btn">
+     <button id="resetButton">スコアリセット</button>
+     <!--ホームに戻る -->
+   <p class="homebtn"><a href="home.html">ホームに戻る</a></p>
+</div>
+
+<script src="./javascript/result.js"></script>
+
+</body>
+</html>

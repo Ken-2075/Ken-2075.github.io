@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #ffffef;
+}
+
+.title{
+    color: rgb(66, 66, 66);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /*animation: flame 1s infinite;
+    transition: color 0.3s ease, transform 0.3s ease;*/
+}
+
+/*.title:hover{
+    transform: scale(5);
+}
+*/
+
+.quiz a{
+    text-decoration: none;
+    color: #e45f5f;
+    font-weight: bold;
+    font-size: 28px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 69, 0, 0.8), 0 0 10px rgba(255, 69, 0, 0.8); /* 炎っぽい光を加える */
+    animation: flame 1s infinite;
+    
+}
+
+
+.quiz a:hover{
+    color: #f0380af3;  /* ホバー時に色を変更 */
+    transform: scale(1.3);  /* ホバー時に文字を1.5倍に拡大 */
+    transform-origin: center;  /* 拡大の基準点を中央に設定 */
+    animation: none;
+    transition: transform 0.3s ease;
+}
+
+.quiz:hover{
+    transform: scale(1.3);  /* ホバー時に文字を1.5倍に拡大 */
+    transform-origin: center;  /* 拡大の基準点を中央に設定 */
+    animation: none;
+    transition: transform 0.3s ease;
+
+}
+
+@keyframes flame {
+    0% {
+        color: #FF4500; /* オレンジ */
+        text-shadow: 0 0 5px rgba(255, 69, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.9), 0 0 20px rgba(255, 69, 0, 1);
+        
+    }
+    25% {
+        color: #FF6347; /* トマト色 */
+        text-shadow: 0 0 5px rgba(255, 99, 71, 0.8), 0 0 15px rgba(255, 99, 71, 0.9), 0 0 30px rgba(255, 99, 71, 1);
+        
+    }
+    50% {
+        color: #ff8800; /* 黄色 */
+        text-shadow: 0 0 5px rgba(255, 166, 0, 0.8), 0 0 15px rgba(255, 81, 0, 0.9), 0 0 20px rgb(238, 255, 0);
+        
+    }
+    75% {
+        color: #FF4500; /* 元の色に戻る */
+        text-shadow: 0 0 5px rgba(255, 69, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.8), 0 0 20px rgba(255, 69, 0, 1);
+        
+    }
+    100% {
+        color: #FF6347; /* トマト色 */
+        text-shadow: 0 0 5px rgba(255, 99, 71, 0.8), 0 0 15px rgba(255, 99, 71, 0.9), 0 0 20px rgba(255, 99, 71, 1);
+        
+    }
+}
+
+
+@keyframes test1 {
+    0% {
+        color: #FF4500; /* オレンジ */
+        text-shadow: 0 0 5px rgba(255, 69, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.9), 0 0 20px rgba(255, 69, 0, 1);
+        transform: scale(1) rotate(0deg);
+    }
+    
+    50% {
+        color: #ff9900; /* 黄色 */
+        text-shadow: 0 0 5px rgba(211, 61, 42, 0.692), 0 0 15px rgba(255, 153, 0, 0.9), 0 0 20px rgb(255, 51, 0);
+        transform: scale(1) rotate(0deg); /* 少し拡大して回転 */
+    }
+    
+    100% {
+        color: #FF6347; /* トマト色 */
+        text-shadow: 0 0 5px rgba(255, 99, 71, 0.8), 0 0 15px rgba(255, 99, 71, 0.9), 0 0 20px rgba(255, 99, 71, 1);
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.category{
+   display: flex;
+   flex-direction: row;
+   gap: 22px;
+   word-spacing: 22px;
+   font-weight: bold;
+   justify-content: flex-end;
+}
+
+.category a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #666666;
+}
+
+.category a:hover{
+   color: black;
+}
+
+
+
+.introduction{
+    color: #666666;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 120px;
+}
+
+.mondai{
+    color: #666666;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 160px;
+}
+
+.mondai a{
+  text-decoration: none;
+  color: rgba(1, 11, 19, 0.795);
+}
+
+
+.hoverText {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+    transition: color 0.3s ease, transform 0.3s ease;  /* ホバー時に色とtransformの遷移を追加 */
+}
+
+.hoverText:hover {
+    color: #000000f3;  /* ホバー時に色を変更 */
+    transform: scale(1.1);  /* ホバー時に文字を1.5倍に拡大 */
+    transform-origin: center;  /* 拡大の基準点を中央に設定 */
+    animation: none;  /* アニメーションを停止 */
+    transition: transform 0.3s ease;  /* スムーズな変化を追加 */
+}
+
+.username1{
+    color: #666666;
+    text-align: left;
+    font-size: 13px;
+}
+
+#username{
+    text-decoration: none;
+    color: #215e2e;
+    font-weight: bold;
+    font-size: 28px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-shadow: 0 0 5px rgba(157, 255, 0, 0.8), 0 0 10px rgba(0, 225, 255, 0.8); 
+}
+
+#logoutBtn {
+    padding: 2px 16px; /* ボタン内の余白 */
+    background-color: #4b72ac; /* 背景色 */
+    color: rgb(222, 240, 243); /* 文字色 */
+    border: none; /* 枠線を消す */
+    border-radius: 6px; /* 角を丸くする */
+    font-size: 15px; /* フォントサイズ */
+    cursor: pointer; /* マウスカーソルをポインターにする */
+    transition: background-color 0.3s, transform 0.2s; /* ホバー時やクリック時のアニメーション */
+}
+
+#logoutBtn:hover {
+    background-color: #0056b3; /* 背景色を少し濃くする */
+    transform: scale(1.05); /* 少し大きくなる */
+}

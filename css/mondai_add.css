@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #fefeff;
+}
+
+.title{
+    color: rgb(66, 66, 66);
+    text-align: center;
+}
+
+.category{
+   text-align: right;
+   word-spacing: 22px;
+   font-weight: bold;
+   font-size: 23px;
+   
+}
+
+.category a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.category a:hover{
+   color: black;
+}
+
+.quiz a{
+    color: #e45f5f;
+    font-size: 28px;
+}
+
+.quiz a:hover{
+    color: #ac1010;
+}
+
+
+.introduction{
+    color: #666666;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 120px;
+}
+
+.mondai{
+    color: #666666;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 160px;
+}
+
+.mondai a{
+  text-decoration: none;
+  color: rgba(1, 11, 19, 0.795);
+}

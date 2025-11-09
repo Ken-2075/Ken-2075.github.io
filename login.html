@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <div class="detail">  
+    <h2 class="title">
+        ログイン画面
+    </h2>
+
+    <p class="category">
+      <span class="home"><a href="home.html">ホーム</a></span>
+      <span class="login"><a href="login.html">ログイン</a></span>
+      <span class="contact"><a href="">お問合せ</a></span>
+    </p>
+  </div>
+
+  <div class="introduction">
+     <p>
+        ログインページです。
+        <br>
+        ログインに必要な「ユーザー名」と「パスワード」を入力してください。
+        <br>
+        登録がまだの方は<a href="newuser.html">こちら</a>から新規登録をお願いします。
+     </p>
+  </div>
+
+  <!--ログイン情報入力欄-->
+  <div class="login-info">
+    <form id="loginForm">
+        <!--ユーザー名-->
+        <div class="form-group">
+            <label for="username">ユーザー名</label>
+            <input type="text" id="username" name="username" placeholder="ユーザー名を入力" required>
+        </div>
+
+        <!--パスワード-->
+        <div class="form-group">
+            <label for="password">パスワード</label>
+            <input type="password" id="password" name="password" placeholder="パスワードを入力" required>
+        </div>
+
+        <!-- ログインボタン -->
+        <button type="button" onclick="loginUser()">ログイン</button>
+    </form>
+  </div>
+
+  <script src="./javascript/login.js"></script>
+</body>
+</html>

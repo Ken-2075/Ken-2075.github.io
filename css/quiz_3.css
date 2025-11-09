@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #ffffef;
+}
+
+.title{
+    color: rgb(66, 66, 66);
+    text-align: center;
+}
+
+.category{
+   text-align: right;
+   word-spacing: 22px;
+   font-weight: bold;
+   font-size: 23px;
+   
+}
+
+.category a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.category a:hover{
+   color: black;
+}
+
+.quiz a{
+    color: #e45f5f;
+    font-size: 28px;
+}
+
+.quiz a:hover{
+    color: #ac1010;
+}
+
+.introduction{
+    color: #666666;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 120px;
+}
+
+.quiz_categry{
+    color: #666666;
+    text-align: center;
+    font-size: 29px;
+    margin-top: 185px;
+}
+
+.seikai{
+     color: #ff0404;
+     margin-top: 5px;
+}
+
+.fuseikai{
+    color: #1504ff;
+    margin-top: 5px;
+}
+
+
+.mondaibun{
+    color: #666666;
+    text-align: center;
+    font-size: 29px;
+    background-color: aliceblue;
+}
+
+.sentakushi {
+    /* ラジオボタンにスタイルを適用 */
+    width: 55px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+label {
+    font-size: 19px;
+    margin-bottom: 10px;
+    display: block;
+    color: #666666;
+    font-weight: bold;
+
+}
+
+.kaitou_btn{
+      text-decoration: none;
+      color: rgb(248, 253, 255);
+      background-color: #5e84ca;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 2px 16px;
+      margin-top: 5px;
+      box-shadow:4px 4px #adbbb6;
+      transition: .10s;
+}
+
+.kaitou_btn:hover{
+   box-shadow: 0 0 0 #bbadad;
+   color: #5e84ca;
+   background-color:rgb(248, 253, 255);
+}
+.result_btn{
+      text-decoration: none;
+      color: rgb(255, 248, 248);
+      background-color: #ce5f5f;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5px 18px;
+      margin-top: 10px;
+      box-shadow:4px 4px #adbbb6;
+      transition: .10s;
+}
+
+.result_btn:hover{
+   box-shadow: 0 0 0 #bbadad;
+   color: #ce5f5f;
+   background-color:rgb(255, 248, 248);
+}
